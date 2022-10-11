@@ -1,0 +1,114 @@
+/*Variables Globales*/
+*{
+    --colorFondoPrincipal: #676565;
+    --fuentePrincipal: 'Poppins', sans-serif;
+    --colorBoton: rgb(253, 229, 71);
+    --colorTerminosCondiciones:  rgb(216, 183, 14);
+    --colorFondoContainer: #000;
+}
+
+body{ 
+   background-color: var(--colorFondoPrincipal);
+   font-family: var(--fuentePrincipal);
+}
+
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+input::placeholder{
+    color: rgb(93, 91, 91);
+}
+
+/*Header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Imagen*/
+.imagen-form{
+   object-fit: cover;
+   max-width: 42.5vw;
+   height: 73vh;
+   border-radius: 1rem;
+}
+
+/*Contenedor*/
+.container{
+    margin-top: 3rem;
+    background-color: var(--colorFondoContainer);
+    height: 80vh;
+    border-radius: 1rem;
+}
+
+.icon-tabler-x{
+    margin: 2.5rem;
+}
+
+.container-form{
+    background-color: white;
+    height: 73vh;
+    border-radius: 1rem;
+}
+
+.form-contacto{
+  margin: 3rem 1rem;
+}
+
+.terminos-condiciones{
+    color: var(--colorTerminosCondiciones);
+    text-decoration:underline;
+
+}
+
+button{
+    margin-top: 3rem;
+    background-color: var(--colorBoton);
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Estilos para el boton*/
+button:hover{
+    box-shadow: 3px 5px 10px 3px  rgb(213, 213, 213);
+}
+button:focus{
+    background-color: orange;
+}
+
+/*pantalla desktop*/
+@media screen and (min-width:1000px){
+ .boton{
+    display: flex;
+    justify-content: center;
+ }
+
+ button{
+    margin: 1rem;
+    width: 17rem;
+ }
+
+ .imagen-form{
+    width: 34.2vw;
+ }
+}
+
+/*Acomodación de la imagen para pantallas desktop mas grandes*/
+@media screen and (min-width:1960px){
+    .imagen-form{
+        max-width: 31vw;
+    }
+}
+
